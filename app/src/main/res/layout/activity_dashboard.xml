@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sreedharcce.prabhu.exampreparation.DashboardActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/sreedharslogo"/>
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+                android:gravity="center_vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/testimage"
+                android:id="@+id/onlineTest"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Online Test"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/onlineTest"
+                    android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"></View>
+            <RelativeLayout
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+                <ImageView
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/testimage"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="43dp" />
+                <TextView
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class Test"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/imageView"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:id="@+id/noticeBoard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/testimage"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+                <TextView
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notice Board"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/noticeBoard"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"></View>
+            <RelativeLayout
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+                <ImageView
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:id="@+id/explanationBoard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/testimage"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="43dp" />
+                <TextView
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explanaton Board"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/explanationBoard"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>
